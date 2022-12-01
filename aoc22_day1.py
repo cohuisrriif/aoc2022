@@ -29,7 +29,7 @@ print(f'solution day 1 part 1 : {solution_part1_day1}')
 ## test 
 data_test.sort()
 solution_part2_test = sum(data_test[-3:])
-print(f'solution test part 1 : {solution_part2_test }')
+print(f'solution test part 1 : {solution_part2_test}')
 
 ## submission 
 data.sort()
