@@ -68,19 +68,8 @@ C : scissors
 X : i should lose 
 Y : i need to draw
 Z : i need to win
-
-(A, X) -> (A, Z)
-(A, Y) -> (A, X)
-(A, Z) -> (A, Y)
-
-(B, X) -> (B, X)
-(B, Y) -> (B, Y)
-(B, Z) -> (B, Z)
-
-(C, X) -> (C, Y)
-(C, Y) -> (C, Z)
-(C, Z) -> (C, X)
 """
+
 change_strategy = {
     ('A', 'X'):('A', 'Z'),
     ('A', 'Y'):('A', 'X'),
