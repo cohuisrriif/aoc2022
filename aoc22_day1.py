@@ -18,27 +18,27 @@ with open('./input/input_day1.txt') as f:
 data_test = [int(calories) if calories != '' else '' for calories in data]
 data_test = [sum(list(calories)) for emptychar, calories in groupby(data_test, key=bool) if emptychar]
 
-solution_part1_test = max(data_test)
-print(f'solution day 1 test part 1 : {solution_part1_test}')
+solution_phase1_test_d1 = max(data_test)
+print(f'solution day 1 phase 1 test : {solution_phase1_test_d1}')
 
 ## submission 
 
 data = [int(calories) if calories != '' else '' for calories in data]
 data = [sum(list(calories)) for emptychar, calories in groupby(data, key=bool) if emptychar]
 
-solution_part1_day1 = max(data)
-print(f'solution day 1 part 1 : {solution_part1_day1}')
+solution_phase1_d1 = max(data)
+print(f'solution day 1 phase 1 : {solution_phase1_d1}')
 
 # phase 2
 
 ## test 
 
 data_test.sort()
-solution_part2_test = sum(data_test[-3:])
-print(f'solution day 1 test part 2 : {solution_part2_test}')
+solution_phase2_test_d2 = sum(data_test[-3:])
+print(f'solution day 1 phase 2 test : {solution_phase2_test_d2}')
 
 ## submission 
 
 data.sort()
-solution_part2_day1 = sum(data[-3:])
-print(f'solution day 1  part 2 : {solution_part2_day1}')
+solution_phase2_d2 = sum(data[-3:])
+print(f'solution day 1 phase 2 : {solution_phase2_d2}')

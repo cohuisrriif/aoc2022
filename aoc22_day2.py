@@ -46,15 +46,15 @@ def score(fight):
 
 scores_test = [score(fight) for fight in data_test]
 
-solution_part1_test = sum(scores_test)
-print(f'solution day 1 test part 1 : {solution_part1_test}')
+solution_phase1_test_d2 = sum(scores_test)
+print(f'solution day 2 phase 1 test : {solution_phase1_test_d2}')
 
 ## submission 
 
 scores = [score(fight) for fight in data]
 
-solution_part1_day1 = sum(scores)
-print(f'solution day 1 part 1 : {solution_part1_day1}')
+solution_phase1_d2= sum(scores)
+print(f'solution day 2 phase 1 : {solution_phase1_d2}')
 
 
 
@@ -87,15 +87,13 @@ change_strategy = {
 data_test_changed = [change_strategy[fight] for fight in data_test]
 scores_test_phase2 = [score(fight) for fight in data_test_changed]
 
-solution_part2_test = sum(scores_test_phase2)
-print(f'solution day 1 test part 2 : {solution_part2_test}')
+solution_phase2_test_d2 = sum(scores_test_phase2)
+print(f'solution day 2 phase 2 test : {solution_phase2_test_d2}')
 
 ## submission 
 
 data_changed = [change_strategy[fight] for fight in data]
 scores_phase2 = [score(fight) for fight in data_changed]
 
-solution_part2_day1 = sum(scores_phase2)
-print(f'solution day 1 part 2 : {solution_part2_day1}')
-
-
+solution_phase2_d2 = sum(scores_phase2)
+print(f'solution day 2 phase 2 : {solution_phase2_d2}')
