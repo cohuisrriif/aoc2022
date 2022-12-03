@@ -6,7 +6,7 @@ from colorama import Style
 from pprint import pprint
 from itertools import groupby
 
-print(f"{Fore.GREEN}ADVENT OF CODE - DAY 2{Style.RESET_ALL}")
+print(f"{Fore.GREEN}ADVENT OF CODE - DAY 1{Style.RESET_ALL}")
 
 # load data test 
 with open('./input/input_day1_test.txt') as f:

@@ -6,6 +6,8 @@ from colorama import Style
 from pprint import pprint
 import string
 
+print(f"{Fore.GREEN}ADVENT OF CODE - DAY 3{Style.RESET_ALL}")
+
 # load data test
 with open('./input/input_day3_test.txt') as f:
     data_test = f.read().split('\n')
