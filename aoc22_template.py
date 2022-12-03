@@ -25,10 +25,10 @@ print(f'solution dayX3 phase 1 : {solution_phase1_dX}')
 
 ## test 
 
-solution_part2_test_dX = 
+solution_phase2_test_dX = 
 print(f'solution day X test phase 2 : {solution_phase2_test_dX}')
 
 ## submission 
 
-solution_part2_dX = 
+solution_phase2_dX = 
 print(f'solution day X phase 2 : {solution_phase2_dX}')
