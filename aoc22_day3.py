@@ -1,5 +1,8 @@
 # AOC 2022 - DAY 3
 
+# load library 
+from colorama import Fore
+from colorama import Style
 from pprint import pprint
 import string
 
@@ -15,10 +18,7 @@ with open('./input/input_day3.txt') as f:
 
 def getitempriority(item):
     list_of_letters = list(string.ascii_lowercase + string.ascii_uppercase)
-    if item in list_of_letters:
-        priority = list_of_letters.index(item) + 1
-    else:
-        priority = 0
+    priority = list_of_letters.index(item) + 1
     return(priority)
 
 def getcommonitem(rucksack):
@@ -29,12 +29,12 @@ def getcommonitem(rucksack):
 ## test 
 
 solution_phase1_test_d3 = sum([getitempriority(getcommonitem(rucksack)) for rucksack in data_test])
-pprint(f'solution day 3 phase 1 test : {solution_phase1_test_d3}')
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} phase 1 test : {Fore.RED}{solution_phase1_test_d3}{Style.RESET_ALL}")
 
 ## submission 
 
 solution_phase1_d3 = sum([getitempriority(getcommonitem(rucksack)) for rucksack in data])
-print(f'solution day 3 phase 1 : {solution_phase1_d3}')
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} phase 1      : {Fore.RED}{solution_phase1_d3}{Style.RESET_ALL} ⭐")
 
 # phase 2
 
@@ -48,11 +48,11 @@ def getcommonitemV2(rucksacks):
 ## test 
 
 solution_phase2_test_d3 = sum([getitempriority(getcommonitemV2(data_test[r:r+3])) for r in range(0, len(data_test), 3)])
-print(f'solution day 3 test phase 2 : {solution_phase2_test_d3}')
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} test phase 2 : {Fore.RED}{solution_phase2_test_d3}{Style.RESET_ALL}")
 
 ## submission 
 
 solution_phase2_d3 = sum([getitempriority(getcommonitemV2(data[r:r+3])) for r in range(0, len(data), 3)])
-print(f'solution day 3 phase 2 : {solution_phase2_d3}')
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} phase 2      : {Fore.RED}{solution_phase2_d3}{Style.RESET_ALL} ⭐")
 
 

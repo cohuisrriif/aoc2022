@@ -1,5 +1,12 @@
 # AOC 2022 - DAY 2
 
+# load library 
+from colorama import Fore
+from colorama import Style
+from pprint import pprint
+
+print(f"{Fore.GREEN}ADVENT OF CODE - DAY 2{Style.RESET_ALL}")
+
 # load data test
 with open('./input/input_day2_test.txt') as f:
     data_test = [tuple(s.split(' ')) for s in f.read().split('\n')]
@@ -7,11 +14,10 @@ with open('./input/input_day2_test.txt') as f:
 # load data complete 
 with open('./input/input_day2.txt') as f:
     data = [tuple(s.split(' ')) for s in f.read().split('\n')]
-del data[-1]
 
 # phase 1
 
-## test 
+
 
 score = {
     ('A', 'X'): 3 + 1,
@@ -26,28 +32,19 @@ score = {
 }
 
 scores_test = [score[fight] for fight in data_test]
+scores = [score[fight] for fight in data]
+
+## test 
 
 solution_phase1_test_d2 = sum(scores_test)
-print(f'solution day 2 phase 1 test : {solution_phase1_test_d2}')
+print(f"solution {Fore.BLUE}day 2{Style.RESET_ALL} phase 1 test : {Fore.RED}{solution_phase1_test_d2}{Style.RESET_ALL}")
 
 ## submission 
 
-scores = [score[fight] for fight in data]
-
 solution_phase1_d2= sum(scores)
-print(f'solution day 2 phase 1 : {solution_phase1_d2}')
+print(f"solution {Fore.BLUE}day 2{Style.RESET_ALL} phase 1      : {Fore.RED}{solution_phase1_d2}{Style.RESET_ALL} ⭐")
 
 # phase 2
-
-"""
-A : rock
-B : paper
-C : scissors 
-
-X : i should lose 
-Y : i need to draw
-Z : i need to win
-"""
 
 change_strategy = {
     ('A', 'X'):('A', 'Z'),
@@ -61,18 +58,18 @@ change_strategy = {
     ('C', 'Z'):('C', 'X'),
 }
 
-## test 
-
 data_test_changed = [change_strategy[fight] for fight in data_test]
 scores_test_phase2 = [score[fight] for fight in data_test_changed]
-
-solution_phase2_test_d2 = sum(scores_test_phase2)
-print(f'solution day 2 phase 2 test : {solution_phase2_test_d2}')
-
-## submission 
 
 data_changed = [change_strategy[fight] for fight in data]
 scores_phase2 = [score[fight] for fight in data_changed]
 
+## test 
+
+solution_phase2_test_d2 = sum(scores_test_phase2)
+print(f"solution {Fore.BLUE}day 2{Style.RESET_ALL} phase 2 test : {Fore.RED}{solution_phase2_test_d2}{Style.RESET_ALL}")
+
+## submission 
+
 solution_phase2_d2 = sum(scores_phase2)
-print(f'solution day 2 phase 2 : {solution_phase2_d2}')
+print(f"solution {Fore.BLUE}day 2{Style.RESET_ALL} phase 2      : {Fore.RED}{solution_phase2_d2}{Style.RESET_ALL} ⭐")

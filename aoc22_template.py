@@ -1,34 +1,51 @@
 # AOC 2022 - TEMPLATE
-X = day
+XX = day
+
+# load library 
+from colorama import Fore
+from colorama import Style
+from pprint import pprint
+
+print(f"{Fore.GREEN}ADVENT OF CODE - DAY XX{Style.RESET_ALL}")
 
 # load data test
-with open('./input/input_dayX_test.txt') as f:
-    data_test = 
-
+with open('./input/input_dayXX_test.txt') as f:
+    data_test = None #f.read().split('\n')
+    
 # load data complete 
-with open('./input/input_dayX.txt') as f:
-    data = 
+with open('./input/input_dayXX.txt') as f:
+    data = None #f.read().split('\n')
 
 # phase 1
 
+"""
+CODE OF PHASE 2    
+"""
+
 ## test 
 
-solution_phase1_test_dX = 
-print(f'solution day X phase 1 test : {solution_phase1_test_dX}')
+solution_phase1_test_dXX = None
+print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 1 test : {Fore.RED}{solution_phase1_test_dXX}{Style.RESET_ALL}")
 
 ## submission 
 
-solution_phase1_dX = 
-print(f'solution dayX3 phase 1 : {solution_phase1_dX}')
+solution_phase1_d3 = sum([getitempriority(getcommonitem(rucksack)) for rucksack in data])
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} phase 1      : {Fore.RED}{solution_phase1_dXX}{Style.RESET_ALL} ⭐")
 
 # phase 2
 
+"""
+CODE OF PHASE 2    
+"""
+
 ## test 
 
-solution_phase2_test_dX = 
-print(f'solution day X test phase 2 : {solution_phase2_test_dX}')
+solution_phase2_test_d3 = None
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} test phase 2 : {Fore.RED}{solution_phase2_test_dXX}{Style.RESET_ALL}")
 
 ## submission 
 
-solution_phase2_dX = 
-print(f'solution day X phase 2 : {solution_phase2_dX}')
+solution_phase2_d3 = None
+print(f"solution {Fore.BLUE}day 3{Style.RESET_ALL} phase 2      : {Fore.RED}{solution_phase2_dXX}{Style.RESET_ALL} ⭐")
+
+
