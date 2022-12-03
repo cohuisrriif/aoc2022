@@ -5,7 +5,7 @@ from itertools import groupby
 
 # load data test 
 with open('./input/input_day1_test.txt') as f:
-    data = f.read().split('\n')
+    data_test = f.read().split('\n')
 
 # load data complete 
 with open('./input/input_day1.txt') as f:
@@ -15,7 +15,7 @@ with open('./input/input_day1.txt') as f:
 
 ## test 
 
-data_test = [int(calories) if calories != '' else '' for calories in data]
+data_test = [int(calories) if calories else 0 for calories in data_test]
 data_test = [sum(list(calories)) for emptychar, calories in groupby(data_test, key=bool) if emptychar]
 
 solution_phase1_test_d1 = max(data_test)
