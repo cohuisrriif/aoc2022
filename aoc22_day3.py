@@ -19,8 +19,8 @@ with open('./input/input_day3.txt') as f:
 # phase 1
 
 def getitempriority(item):
-    list_of_letters = list(string.ascii_lowercase + string.ascii_uppercase)
-    priority = list_of_letters.index(item) + 1
+    letters = list(string.ascii_lowercase + string.ascii_uppercase)
+    priority = letters.index(item) + 1
     return(priority)
 
 def getcommonitem(rucksack):

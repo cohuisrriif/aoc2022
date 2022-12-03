@@ -17,8 +17,6 @@ with open('./input/input_day2.txt') as f:
 
 # phase 1
 
-
-
 score = {
     ('A', 'X'): 3 + 1,
     ('A', 'Y'): 6 + 2,
