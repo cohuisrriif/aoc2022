@@ -19,7 +19,7 @@ with open('./input/input_dayXX.txt') as f:
 # phase 1
 
 """
-CODE OF PHASE 2    
+CODE OF PHASE 1   
 """
 
 ## test 
@@ -29,7 +29,7 @@ print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 1 test : {Fore.RED}{so
 
 ## submission 
 
-solution_phase1_d3 = None
+solution_phase1_dXX = None
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 1      : {Fore.RED}{solution_phase1_dXX}{Style.RESET_ALL} ⭐")
 
 # phase 2
@@ -40,12 +40,12 @@ CODE OF PHASE 2
 
 ## test 
 
-solution_phase2_test_d3 = None
+solution_phase2_test_dXX = None
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} test phase 2 : {Fore.RED}{solution_phase2_test_dXX}{Style.RESET_ALL}")
 
 ## submission 
 
-solution_phase2_d3 = None
+solution_phase2_dXX = None
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 2      : {Fore.RED}{solution_phase2_dXX}{Style.RESET_ALL} ⭐")
 
 
