@@ -1,4 +1,4 @@
-# AOC 2022 - TEMPLATE
+# AOC 2022 - DAY 4 
 
 # load library 
 from colorama import Fore
