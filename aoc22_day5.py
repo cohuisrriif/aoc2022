@@ -10,7 +10,7 @@ print(f"{Fore.GREEN}ADVENT OF CODE - DAY 5{Style.RESET_ALL}")
 # load data test
 with open('./input/input_day5_test.txt') as f:
     data_test = f.read().split('\n')
-    
+
 # load data complete 
 with open('./input/input_day5.txt') as f:
     data = f.read().split('\n')
