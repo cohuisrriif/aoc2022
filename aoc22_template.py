@@ -1,5 +1,4 @@
-# AOC 2022 - TEMPLATE
-XX = day
+# AOC 2022 - DAY XX
 
 # load library 
 from colorama import Fore
@@ -18,34 +17,32 @@ with open('./input/input_dayXX.txt') as f:
 
 # phase 1
 
-"""
-CODE OF PHASE 1   
-"""
+def solution_phase1(data):
+    return(None)
 
 ## test 
 
-solution_phase1_test_dXX = None
+solution_phase1_test_dXX = solution_phase1(data_test)
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 1 test : {Fore.RED}{solution_phase1_test_dXX}{Style.RESET_ALL}")
 
 ## submission 
 
-solution_phase1_dXX = None
+solution_phase1_dXX = solution_phase1(data)
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 1      : {Fore.RED}{solution_phase1_dXX}{Style.RESET_ALL} ⭐")
 
 # phase 2
 
-"""
-CODE OF PHASE 2    
-"""
+def solution_phase2(data):
+    return(None)
 
 ## test 
 
-solution_phase2_test_dXX = None
+solution_phase2_test_dXX = solution_phase2(data_test)
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} test phase 2 : {Fore.RED}{solution_phase2_test_dXX}{Style.RESET_ALL}")
 
 ## submission 
 
-solution_phase2_dXX = None
+solution_phase2_dXX = solution_phase2(data)
 print(f"solution {Fore.BLUE}day XX{Style.RESET_ALL} phase 2      : {Fore.RED}{solution_phase2_dXX}{Style.RESET_ALL} ⭐")
 
 
